@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.masodfoku_egyenlet.HelloController" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="x² +" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="aField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="x +" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+    <TextField fx:id="bField" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+    <Label text="= 0" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+    <TextField fx:id="cField" GridPane.rowIndex="0" GridPane.columnIndex="5"/>
+
+    <Button text="Számol" onAction="#calculate" GridPane.rowIndex="1" GridPane.columnIndex="2" GridPane.columnSpan="2"/>
+
+    <Label fx:id="resultLabel" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="6"/>
+</GridPane>
